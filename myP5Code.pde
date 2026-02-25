@@ -1,6 +1,9 @@
 setup = function() {
-    size(400, 400);    
+    size(400, 400);  
+
+ 
 };
+
 
 draw = function() {
     background(255,255,255,150);
@@ -9,8 +12,17 @@ draw = function() {
 
     fill(0, 0, 0);
     textSize(20);
-    text("What kind of band never plays music?", 39, 200);
+   
+   
+   if (mousePressed){
+ text("Rubberband", 39, 200);
+
+   }
+ else{
+     text("What kind of band never plays music?", 39, 200);
+ }
 };
+
 
 /*
 Riddle Taken From 
